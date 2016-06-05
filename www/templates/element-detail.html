@@ -6,9 +6,24 @@
 -->
 <ion-view view-title="{{element.name}}">
   <ion-content class="padding">
-    <img ng-src="{{element.face}}" style="width: 64px; height: 64px">
+   <!-- <img ng-src="{{element.face}}" style="width: 64px; height: 64px">-->
     <p>
-      {{element.lastText}}
+      Atomic number: {{element.id}} 
+    </p>
+    <p>
+      Atomic mass: {{element.mass}} g/mol
+    </p>
+    <p>
+      Group: {{element.type}}
+    </p>
+    <p>
+      Boiling point: {{element.boiling}} K
+    </p>
+    <p>
+      Melting point: {{element.melting}} K
+    </p>
+    <p>
+      Electron configuration: {{element.orbits}}
     </p>
   </ion-content>
 </ion-view>
