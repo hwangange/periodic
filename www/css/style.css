@@ -1,1 +1,10 @@
 /* Empty. Add your own CSS if you like */
+.center {
+/*  min-height: 12em;*/
+  display: table;
+  vertical-align: middle;
+  align-items: center;
+  -webkit-align-items: center;
+  overflow: hidden;
+  text-align: center;
+}

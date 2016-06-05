@@ -11,9 +11,17 @@
       </ion-item>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="element in elements" type="item-text-wrap" href="#/tab/search/{{element.id}}">
         <!--<img ng-src="{{element.face}}">-->
-        <h2>{{element.name}}</h2>
-        <p>{{element.mass}}</p>
-        <i class="icon ion-chevron-right icon-accessory"></i>
+        <!--<img ng-src = "../img/ben.png">-->
+        <div class = "row">
+          <div class = "col-5">
+            <div style = "background-color: red; height: 100%; width:90%"><p>H</p></div>
+          </div>
+          <div class = "col-95">
+            <h2>{{element.name}}</h2>
+            <p>{{element.mass}}</p>
+            <i class="icon ion-chevron-right icon-accessory"></i>
+          </div>
+        </div>
 
         <ion-option-button class="button-assertive" ng-click="remove(element)">
           Delete

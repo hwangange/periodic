@@ -9178,6 +9178,27 @@ a.button {
 /* By default each grid column will evenly distribute */
 /* across the grid. However, you can specify individual */
 /* columns to take up a certain size of the available area */
+
+/*Added by Angela */
+.col-5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 5%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 5%;
+  -ms-flex: 0 0 5%;
+  flex: 0 0 5%;
+  max-width: 5%; }
+
+.col-95 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 95%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 95%;
+  -ms-flex: 0 0 95%;
+  flex: 0 0 95%;
+  max-width: 95%; }
+/*****************/
+
 .col-10 {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 10%;
