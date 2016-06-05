@@ -9,13 +9,13 @@
           Search
         </button>
       </ion-item>
-      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/search/{{chat.id}}">
-        <img ng-src="{{chat.face}}">
-        <h2>{{chat.name}}</h2>
-        <p>{{chat.lastText}}</p>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="element in elements" type="item-text-wrap" href="#/tab/search/{{element.id}}">
+        <img ng-src="{{element.face}}">
+        <h2>{{element.name}}</h2>
+        <p>{{element.lastText}}</p>
         <i class="icon ion-chevron-right icon-accessory"></i>
 
-        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+        <ion-option-button class="button-assertive" ng-click="remove(element)">
           Delete
         </ion-option-button>
       </ion-item>

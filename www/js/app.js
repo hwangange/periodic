@@ -45,7 +45,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-home': {
         templateUrl: 'templates/tab-home.html',
-        controller: 'DashCtrl'
+        controller: 'HomeCtrl'
       }
     }
   })
@@ -55,16 +55,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
         'tab-search': {
           templateUrl: 'templates/tab-search.html',
-          controller: 'ChatsCtrl'
+          controller: 'SearchCtrl'
         }
       }
     })
     .state('tab.element-detail', {
-      url: '/search/:chatId',
+      url: '/search/:elementId',
       views: {
         'tab-search': {
           templateUrl: 'templates/element-detail.html',
-          controller: 'ChatDetailCtrl'
+          controller: 'ElementDetailCtrl'
         }
       }
     })
@@ -74,7 +74,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-about': {
         templateUrl: 'templates/tab-about.html',
-        controller: 'AccountCtrl'
+        controller: 'AboutCtrl'
       }
     }
   });
